@@ -10,7 +10,7 @@ app.use(express.json());
 app.use('/api/auth', UserRoute);         
 
 // ------ mongoose connection starting ------
-const uri = process.env.MONGODB_URI;                   
+const uri = process.env.MONGO_URL;                   
 mongoose.connect(uri, { 
     useNewUrlParser : true,  
     useUnifiedTopology : true 
